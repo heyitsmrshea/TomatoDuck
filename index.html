@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato Duck | Elite Event Networking Infrastructure</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Tomato Duck provides enterprise-grade networking infrastructure for the world's largest gaming events, esports tournaments, and tech conferences. Trusted by DreamHack, ETHDenver, HALO Championship, and ESL FaceIT.">
+    <meta name="keywords"
+        content="event networking, esports IT, LAN party infrastructure, temporary WiFi, convention networking, DreamHack, ETHDenver, HALO Championship, ESL">
+    <meta name="author" content="Tomato Duck">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tomatoduck.gg/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tomatoduck.gg/">
+    <meta property="og:title" content="Tomato Duck | Elite Event Networking">
+    <meta property="og:description"
+        content="Enterprise-grade networking infrastructure for the world's largest gaming events and esports tournaments.">
+    <meta property="og:image" content="https://tomatoduck.gg/assets/og-image.png">
+    <meta property="og:site_name" content="Tomato Duck">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://tomatoduck.gg/">
+    <meta name="twitter:title" content="Tomato Duck | Elite Event Networking">
+    <meta name="twitter:description"
+        content="Enterprise-grade networking infrastructure for the world's largest gaming events and esports tournaments.">
+    <meta name="twitter:image" content="https://tomatoduck.gg/assets/og-image.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Tomato Duck",
+        "alternateName": "TomatoDuck",
+        "url": "https://tomatoduck.gg",
+        "logo": "https://tomatoduck.gg/assets/favicon.svg",
+        "description": "Enterprise-grade networking infrastructure for gaming events, esports tournaments, and tech conferences.",
+        "foundingDate": "2020",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-704-497-2086",
+            "contactType": "sales",
+            "email": "sales@tomatoduck.gg",
+            "availableLanguage": "English"
+        },
+        "sameAs": [],
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "US"
+        },
+        "areaServed": "Worldwide",
+        "serviceType": ["Event Networking", "Esports IT Support", "Temporary WiFi", "Network Infrastructure"]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="logo-tomato">TOMATO</span><span class="logo-duck">DUCK</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text">Initializing network...</p>
+        </div>
+    </div>
+
+    <!-- Skip to Content (Accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" aria-label="Tomato Duck Home">
+                <span class="logo-tomato">TOMATO</span><span class="logo-duck">DUCK</span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#case-studies" class="nav-link">Case Studies</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <a href="#contact" class="nav-cta">Work With Us</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg">
+                <canvas id="network-canvas"></canvas>
+                <div class="hero-glow hero-glow-1"></div>
+                <div class="hero-glow hero-glow-2"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Trusted by world-class events
+                </div>
+                <h1 class="hero-title">
+                    Elite <span class="gradient-text">Networking</span><br>
+                    for Epic Events
+                </h1>
+                <p class="hero-subtitle">
+                    From sold-out arenas to massive convention centers, we deploy enterprise-grade network
+                    infrastructure that powers the world's largest gaming events, esports tournaments, and tech
+                    conferences.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Start Your Project</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <span>Our Services</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value" data-target="100">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Events Powered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" data-target="50">0</span><span class="stat-suffix">K+</span>
+                        <span class="stat-label">Attendees Connected</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" data-target="99.9">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted By Section -->
+        <section class="clients" id="clients" aria-labelledby="clients-heading">
+            <div class="container">
+                <h2 id="clients-heading" class="clients-label">Trusted by industry leaders</h2>
+                <div class="clients-grid">
+                    <div class="client-logo">
+                        <img src="assets/dreamhack.png" alt="DreamHack" loading="lazy" width="160" height="80">
+                    </div>
+                    <div class="client-logo">
+                        <img src="assets/ethdenver.png" alt="ETHDenver" loading="lazy" width="160" height="80">
+                    </div>
+                    <div class="client-logo">
+                        <img src="assets/halo.png" alt="HALO Championship Series" loading="lazy" width="160"
+                            height="80">
+                    </div>
+                    <div class="client-logo">
+                        <img src="assets/esl.png" alt="ESL FaceIT Group" loading="lazy" width="160" height="80">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services" aria-labelledby="services-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">What We Do</span>
+                    <h2 id="services-heading" class="section-title">Enterprise Event <span
+                            class="gradient-text">Infrastructure</span></h2>
+                    <p class="section-subtitle">Comprehensive IT solutions tailored for high-stakes live events</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card" tabindex="0">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                aria-hidden="true">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Network Infrastructure</h3>
+                        <p class="service-desc">Custom-designed temporary networks for venues of any size. We handle
+                            everything from planning to deployment, ensuring reliable connectivity for thousands of
+                            concurrent users.</p>
+                        <ul class="service-features">
+                            <li>Multi-gigabit backbone deployment</li>
+                            <li>VLAN segmentation & QoS</li>
+                            <li>Redundant failover systems</li>
+                        </ul>
+                    </article>
+                    <article class="service-card" tabindex="0">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                aria-hidden="true">
+                                <path
+                                    d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01M3.515 10.89a10 10 0 0116.97 0M1.05 7.05a14 14 0 0121.9 0" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Wireless Solutions</h3>
+                        <p class="service-desc">High-density WiFi deployments that handle massive crowds without
+                            breaking a sweat. From admin networks to full attendee coverage.</p>
+                        <ul class="service-features">
+                            <li>WiFi 6/6E enterprise APs</li>
+                            <li>Captive portal customization</li>
+                            <li>Real-time monitoring & analytics</li>
+                        </ul>
+                    </article>
+                    <article class="service-card" tabindex="0">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                aria-hidden="true">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <path d="M8 21h8M12 17v4" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Esports IT Support</h3>
+                        <p class="service-desc">Battle-tested tournament infrastructure. We've supported championships
+                            across dozens of titles with zero-tolerance for latency or downtime.</p>
+                        <ul class="service-features">
+                            <li>Tournament network isolation</li>
+                            <li>PC imaging & deployment</li>
+                            <li>Sub-1ms local game servers</li>
+                        </ul>
+                    </article>
+                    <article class="service-card" tabindex="0">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                aria-hidden="true">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Exhibitor Services</h3>
+                        <p class="service-desc">Dedicated networking packages for exhibitors and sponsors. We provide
+                            consultation and custom solutions for each booth's unique requirements.</p>
+                        <ul class="service-features">
+                            <li>Dedicated bandwidth packages</li>
+                            <li>Priority technical support</li>
+                            <li>Custom network configurations</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section class="case-studies" id="case-studies" aria-labelledby="case-studies-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Work</span>
+                    <h2 id="case-studies-heading" class="section-title">Featured <span class="gradient-text">Case
+                            Studies</span></h2>
+                    <p class="section-subtitle">Real deployments. Real results. See how we power elite events.</p>
+                </div>
+                <div class="case-studies-grid">
+                    <article class="case-card" tabindex="0">
+                        <div class="case-header">
+                            <img src="assets/dreamhack.png" alt="DreamHack" class="case-logo" loading="lazy">
+                            <span class="case-type">Gaming Festival</span>
+                        </div>
+                        <h3 class="case-title">DreamHack Atlanta 2024</h3>
+                        <p class="case-desc">Full network deployment for North America's largest gaming festival. 10-day
+                            setup with 8-person crew working 12-hour shifts.</p>
+                        <div class="case-stats">
+                            <div class="case-stat">
+                                <span class="case-stat-value">2,000+</span>
+                                <span class="case-stat-label">BYOC Seats</span>
+                            </div>
+                            <div class="case-stat">
+                                <span class="case-stat-value">40 Gbps</span>
+                                <span class="case-stat-label">Peak Bandwidth</span>
+                            </div>
+                            <div class="case-stat">
+                                <span class="case-stat-value">100%</span>
+                                <span class="case-stat-label">Uptime</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="case-card" tabindex="0">
+                        <div class="case-header">
+                            <img src="assets/ethdenver.png" alt="ETHDenver" class="case-logo" loading="lazy">
+                            <span class="case-type">Tech Conference</span>
+                        </div>
+                        <h3 class="case-title">ETHDenver 2024</h3>
+                        <p class="case-desc">High-security network for the world's largest Web3 hackathon. Isolated
+                            networks for 40+ sponsor activations.</p>
+                        <div class="case-stats">
+                            <div class="case-stat">
+                                <span class="case-stat-value">15,000+</span>
+                                <span class="case-stat-label">Attendees</span>
+                            </div>
+                            <div class="case-stat">
+                                <span class="case-stat-value">200+</span>
+                                <span class="case-stat-label">Access Points</span>
+                            </div>
+                            <div class="case-stat">
+                                <span class="case-stat-value">48hr</span>
+                                <span class="case-stat-label">Non-Stop Hackathon</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="case-card" tabindex="0">
+                        <div class="case-header">
+                            <img src="assets/halo.png" alt="HALO Championship" class="case-logo" loading="lazy">
+                            <span class="case-type">Esports Tournament</span>
+                        </div>
+                        <h3 class="case-title">HCS Major Championship</h3>
+                        <p class="case-desc">Tournament-grade network with zero-tolerance latency requirements. Fully
+                            isolated competition network with broadcast integration.</p>
+                        <div class="case-stats">
+                            <div class="case-stat">
+                                <span class="case-stat-value">&lt;0.5ms</span>
+                                <span class="case-stat-label">Avg Latency</span>
+                            </div>
+                            <div class="case-stat">
+                                <span class="case-stat-value">$250K</span>
+                                <span class="case-stat-label">Prize Pool</span>
+                            </div>
+                            <div class="case-stat">
+                                <span class="case-stat-value">1M+</span>
+                                <span class="case-stat-label">Stream Viewers</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Behind the Scenes</span>
+                    <h2 id="gallery-heading" class="section-title">Our <span class="gradient-text">Work</span> in Action
+                    </h2>
+                    <p class="section-subtitle">From cable runs to live events — see what we do</p>
+                </div>
+                <div class="gallery-grid">
+                    <button class="gallery-item" data-index="0" aria-label="View LAN party image">
+                        <img src="assets/gallery1.png" alt="Massive LAN party with hundreds of gamers" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>LAN Party</span>
+                        </div>
+                    </button>
+                    <button class="gallery-item" data-index="1" aria-label="View network rack image">
+                        <img src="assets/gallery2.png" alt="Network server rack with organized cables" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>NOC Setup</span>
+                        </div>
+                    </button>
+                    <button class="gallery-item" data-index="2" aria-label="View cable deployment image">
+                        <img src="assets/gallery3.png" alt="Crew deploying network cables" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Cable Deploy</span>
+                        </div>
+                    </button>
+                    <button class="gallery-item" data-index="3" aria-label="View esports stage image">
+                        <img src="assets/gallery4.png" alt="Esports tournament stage with crowd" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Esports Stage</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image gallery">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close gallery">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+            </button>
+            <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6" />
+                </svg>
+            </button>
+            <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6" />
+                </svg>
+            </button>
+            <div class="lightbox-content">
+                <img id="lightbox-img" src="" alt="">
+            </div>
+        </div>
+
+        <!-- Pricing Calculator Section -->
+        <section class="pricing" id="pricing" aria-labelledby="pricing-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Estimate Your Project</span>
+                    <h2 id="pricing-heading" class="section-title">Interactive <span
+                            class="gradient-text">Pricing</span> Calculator</h2>
+                    <p class="section-subtitle">Get a ballpark estimate for your event's networking needs</p>
+                </div>
+                <div class="pricing-calculator">
+                    <div class="pricing-inputs">
+                        <div class="pricing-group">
+                            <label for="attendee-count">Expected Attendees</label>
+                            <input type="range" id="attendee-count" min="100" max="50000" value="5000" step="100">
+                            <div class="range-display"><span id="attendee-value">5,000</span> attendees</div>
+                        </div>
+                        <div class="pricing-group">
+                            <label for="event-days">Event Duration</label>
+                            <input type="range" id="event-days" min="1" max="14" value="3" step="1">
+                            <div class="range-display"><span id="days-value">3</span> days</div>
+                        </div>
+                        <div class="pricing-group">
+                            <label>Services Needed</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="svc-wired" checked>
+                                    <span class="checkmark"></span>
+                                    Wired Network
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="svc-wifi" checked>
+                                    <span class="checkmark"></span>
+                                    WiFi Coverage
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="svc-byoc">
+                                    <span class="checkmark"></span>
+                                    BYOC LAN Area
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="svc-esports">
+                                    <span class="checkmark"></span>
+                                    Esports/Tournament
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="svc-noc">
+                                    <span class="checkmark"></span>
+                                    24/7 NOC Support
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-result">
+                        <div class="estimate-card">
+                            <p class="estimate-label">Estimated Project Cost</p>
+                            <p class="estimate-value">$<span id="estimate-amount">25,000</span></p>
+                            <p class="estimate-range">Range: $<span id="estimate-low">20,000</span> - $<span
+                                    id="estimate-high">30,000</span></p>
+                            <a href="#contact" class="btn btn-primary btn-full">Get Exact Quote</a>
+                            <p class="estimate-disclaimer">*Estimates are approximate. Final pricing depends on venue,
+                                specific requirements, and timeline.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">What People Say</span>
+                    <h2 id="testimonials-heading" class="section-title">Client <span
+                            class="gradient-text">Testimonials</span></h2>
+                </div>
+                <div class="testimonials-carousel">
+                    <div class="testimonial-track" id="testimonial-track">
+                        <div class="testimonial-card active">
+                            <div class="testimonial-content">
+                                <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
+                                <p>"Tomato Duck transformed our event. Their team deployed a network for 2,000 BYOC
+                                    attendees in under 48 hours. Zero downtime, zero complaints. They're our permanent
+                                    partners now."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <strong>Marcus Chen</strong>
+                                    <span>Event Director, DreamHack</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
+                                <p>"For a hackathon where developers need 48 hours of uninterrupted connectivity,
+                                    reliability is everything. Tomato Duck delivered flawlessly. Best investment we
+                                    made."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <strong>Sarah Kowalski</strong>
+                                    <span>Operations Lead, ETHDenver</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
+                                <p>"In competitive esports, milliseconds matter. The Tomato Duck team built us a
+                                    tournament network with sub-1ms latency. The players noticed the difference
+                                    immediately."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <strong>James Rodriguez</strong>
+                                    <span>Tournament Director, HCS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-dots" id="testimonial-dots" role="tablist">
+                        <button class="dot active" data-index="0" role="tab" aria-selected="true"
+                            aria-label="Testimonial 1"></button>
+                        <button class="dot" data-index="1" role="tab" aria-selected="false"
+                            aria-label="Testimonial 2"></button>
+                        <button class="dot" data-index="2" role="tab" aria-selected="false"
+                            aria-label="Testimonial 3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section class="why-us" aria-labelledby="why-heading">
+            <div class="container">
+                <div class="why-grid">
+                    <div class="why-content">
+                        <span class="section-tag">Why Tomato Duck</span>
+                        <h2 id="why-heading" class="section-title">We Obsess Over <span class="gradient-text">Every
+                                Detail</span></h2>
+                        <p class="why-desc">While you focus on delivering an incredible experience to your attendees,
+                            our team of technical experts handles every aspect of your event's IT infrastructure.</p>
+                        <div class="why-features">
+                            <div class="why-feature">
+                                <div class="why-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        aria-hidden="true">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                                        <polyline points="22 4 12 14.01 9 11.01" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Proactive Monitoring</h4>
+                                    <p>We identify and resolve issues before you even notice them</p>
+                                </div>
+                            </div>
+                            <div class="why-feature">
+                                <div class="why-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        aria-hidden="true">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Bulletproof Reliability</h4>
+                                    <p>Redundant systems and failsafes at every critical point</p>
+                                </div>
+                            </div>
+                            <div class="why-feature">
+                                <div class="why-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path
+                                            d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Diverse Experience</h4>
+                                    <p>Gaming, lifestyle, tech conferences—we've done it all</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-visual">
+                        <div class="stats-card">
+                            <div class="stats-header">
+                                <span class="stats-dot"></span>
+                                <span>Live Network Status</span>
+                            </div>
+                            <div class="stats-body">
+                                <div class="stat-row">
+                                    <span>Active Connections</span>
+                                    <span class="stat-highlight" id="live-connections">12,847</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Bandwidth Usage</span>
+                                    <span class="stat-highlight" id="live-bandwidth">18.4 Gbps</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Latency (avg)</span>
+                                    <span class="stat-highlight" id="live-latency">0.8ms</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>System Status</span>
+                                    <span class="stat-success">All Systems Nominal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team" id="team" aria-labelledby="team-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our People</span>
+                    <h2 id="team-heading" class="section-title">The <span class="gradient-text">Team</span> Behind the
+                        Magic</h2>
+                    <p class="section-subtitle">Passionate experts who live and breathe event technology</p>
+                </div>
+                <div class="team-grid">
+                    <article class="team-card" tabindex="0">
+                        <div class="team-avatar">
+                            <div class="avatar-placeholder">RC</div>
+                        </div>
+                        <h3 class="team-name">Riley Childs</h3>
+                        <p class="team-role">Owner / Operations Manager</p>
+                        <p class="team-bio">Leading the vision and ensuring every event exceeds expectations</p>
+                    </article>
+                    <article class="team-card" tabindex="0">
+                        <div class="team-avatar">
+                            <div class="avatar-placeholder">DJ</div>
+                        </div>
+                        <h3 class="team-name">Daniel Jutson</h3>
+                        <p class="team-role">Event Lead</p>
+                        <p class="team-bio">On-the-ground expertise making complex deployments look easy</p>
+                    </article>
+                    <article class="team-card" tabindex="0">
+                        <div class="team-avatar">
+                            <div class="avatar-placeholder">SB</div>
+                        </div>
+                        <h3 class="team-name">Samuel Barber</h3>
+                        <p class="team-role">Event Lead</p>
+                        <p class="team-bio">Technical precision and problem-solving under pressure</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq" aria-labelledby="faq-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Common Questions</span>
+                    <h2 id="faq-heading" class="section-title">Frequently Asked <span
+                            class="gradient-text">Questions</span></h2>
+                </div>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>How far in advance should we book your services?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>We recommend booking at least 4-6 weeks in advance for standard events, and 2-3 months
+                                for large-scale deployments (5,000+ attendees). However, we've successfully executed
+                                projects with as little as 2 weeks notice for returning clients. Contact us early to
+                                ensure availability.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>What's your typical setup time for a large event?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>For major events like DreamHack, we typically arrive 7-10 days before doors open. Our
+                                crew of 6-8 technicians works 12-hour shifts to deploy infrastructure. Smaller events
+                                (under 1,000 attendees) can often be set up in 2-3 days.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Do you provide the networking equipment or do we need to rent it?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>We provide everything. Switches, access points, cabling, racks, UPS systems—all included
+                                in our service. We maintain our own inventory of enterprise-grade equipment from Cisco,
+                                Aruba, and Arista. You just need to provide power and an uplink from your ISP.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>What happens if something goes wrong during the event?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Our team maintains an on-site NOC (Network Operations Center) with 24/7 monitoring
+                                throughout your event. We have redundant systems at every critical point, spare
+                                equipment ready to deploy, and our team is trained to resolve issues in minutes. We've
+                                maintained 99.9%+ uptime across all our events.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Can you work with our venue's existing infrastructure?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Absolutely. We've worked in convention centers, arenas, hotels, and outdoor venues
+                                worldwide. We'll do a site survey to understand existing infrastructure, coordinate with
+                                venue IT teams, and design a solution that integrates seamlessly. We bring everything
+                                needed to supplement venue capabilities.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Do you offer streaming/broadcast network support?</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Yes! We provide dedicated broadcast networks with guaranteed bandwidth for Twitch/YouTube
+                                streams, NDI video transport, and production equipment. We've supported streams reaching
+                                1M+ concurrent viewers. Our isolated broadcast VLANs ensure your stream never drops,
+                                even under heavy attendee traffic.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-content">
+                        <span class="section-tag">Get Started</span>
+                        <h2 id="contact-heading" class="section-title">Let's Power Your <span class="gradient-text">Next
+                                Event</span></h2>
+                        <p class="contact-desc">Whether you're planning a 500-person LAN party or a 40,000-attendee
+                            convention, we've got you covered. Tell us about your event and we'll craft the perfect
+                            solution.</p>
+                        <div class="contact-info">
+                            <a href="tel:+17044972086" class="contact-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                                </svg>
+                                <span>(704) 497-2086</span>
+                            </a>
+                            <a href="mailto:sales@tomatoduck.gg" class="contact-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                                <span>sales@tomatoduck.gg</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required placeholder="Your name"
+                                    aria-required="true">
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com"
+                                    aria-required="true">
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="event">Event Type</label>
+                                <select id="event" name="event">
+                                    <option value="">Select event type</option>
+                                    <option value="gaming">Gaming / Esports</option>
+                                    <option value="conference">Tech Conference</option>
+                                    <option value="convention">Convention / Expo</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Tell us about your event</label>
+                                <textarea id="message" name="message" rows="4"
+                                    placeholder="Expected attendance, venue, dates, special requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Send Message</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" aria-hidden="true">
+                                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo" aria-label="Tomato Duck Home">
+                        <span class="logo-tomato">TOMATO</span><span class="logo-duck">DUCK</span>
+                    </a>
+                    <p>Elite networking infrastructure for world-class events.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#services">Services</a>
+                    <a href="#case-studies">Case Studies</a>
+                    <a href="#team">Team</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#" id="privacy-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tomato Duck. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Notice -->
+    <div class="cookie-notice" id="cookie-notice" role="alert">
+        <div class="cookie-content">
+            <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of
+                cookies.</p>
+            <div class="cookie-actions">
+                <button class="btn btn-secondary btn-small" id="cookie-decline">Decline</button>
+                <button class="btn btn-primary btn-small" id="cookie-accept">Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Modal -->
+    <div class="modal" id="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+        <div class="modal-content">
+            <button class="modal-close" id="privacy-close" aria-label="Close privacy policy">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+            </button>
+            <h2 id="privacy-title">Privacy Policy</h2>
+            <div class="modal-body">
+                <h3>Information We Collect</h3>
+                <p>When you contact us through our website, we collect the information you provide, including your name,
+                    email address, and event details. This information is used solely to respond to your inquiry and
+                    provide our services.</p>
+
+                <h3>Cookies</h3>
+                <p>Our website uses basic cookies to remember your cookie consent preference. We do not use tracking
+                    cookies or share your data with third parties for advertising purposes.</p>
+
+                <h3>Data Security</h3>
+                <p>We implement industry-standard security measures to protect your personal information. Your data is
+                    stored securely and is accessible only to authorized personnel.</p>
+
+                <h3>Your Rights</h3>
+                <p>You have the right to request access to, correction of, or deletion of your personal data. Contact us
+                    at sales@tomatoduck.gg for any privacy-related requests.</p>
+
+                <h3>Contact</h3>
+                <p>For questions about this privacy policy, please contact us at sales@tomatoduck.gg or call (704)
+                    497-2086.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
